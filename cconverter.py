@@ -11,10 +11,6 @@ def get_rate(currency, new_currency):  # gets rates info from website
     return rate
 
 
-def add_2_cache(cache_name, key, value):  # adds pairs to cache
-    cache_name[key] = value
-
-
 if actual_currency != 'usd':
     get_rate(actual_currency, 'usd')
 if actual_currency != 'eur':
